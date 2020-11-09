@@ -6,8 +6,8 @@ class FormMovie extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      movieName: "",
-      urlPoster: "",
+      title: "",
+      poster: "",
       comment: "",
     };
     this.handleChange = this.handleChange.bind(this);
@@ -35,31 +35,31 @@ class FormMovie extends React.Component {
     return (
       <form onSubmit={this.submitChange}>
           <div>
-        <label htmlFor="movieName">
+        <label htmlFor="title">
           Title
           <input
-            id="movieName"
-            name="movieName"
+            id="title"
+            name="title"
             type="text"
-            value={this.state.movieName}
+            value={this.state.title}
             onChange={this.handleChange}
           />
         </label>
         </div>
 <div>
-        <label htmlFor="urlPoster">
+        <label htmlFor="poster">
           Poster url
           <input
-            id="urlPoster"
-            name="urlPoster"
+            id="poster"
+            name="poster"
             type="text"
-            value={this.state.urlPoster}
+            value={this.state.poster}
             onChange={this.handleChange}
           />
         </label>
         </div>
         <div>
-        <label htmlFor="Comment">
+        <label htmlFor="comment">
           Comment
           <textarea
             id="comment"
